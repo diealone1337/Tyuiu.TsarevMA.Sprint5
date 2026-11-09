@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.TsarevMA.Sprint5.Task5.V18.Lib
@@ -14,13 +15,20 @@ namespace Tyuiu.TsarevMA.Sprint5.Task5.V18.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
+                    
                     string[] array = line.Split(' ');
                     for (int i = 0; i < array.Length; i++)
                     {
-                        double temp = Convert.ToDouble(array[i].Replace('.', ','));
-                        if (temp >= 10 && temp <= 99 && temp == Math.Round(temp))
+                        if (!string.IsNullOrEmpty(array[i]))
                         {
-                            res *= temp;
+                            
+                            double temp = Convert.ToDouble(array[i].Replace('.', ','), CultureInfo.GetCultureInfo("ru-RU"));
+
+                            
+                            if (temp >= 10 && temp <= 99 && temp % 1 == 0)
+                            {
+                                res *= temp;
+                            }
                         }
                     }
                 }
