@@ -2,7 +2,7 @@
 using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
-namespace Tyuiu.TsarevMA.Sprint5.Task5.V18.Lib
+namespace Tyuiu.TsarevMA.Sprint5.Task5.V18.Lib 
 {
     public class DataService : ISprint5Task5V18
     {
