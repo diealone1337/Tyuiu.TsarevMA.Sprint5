@@ -7,7 +7,7 @@ namespace Tyuiu.TsarevMA.Sprint5.Task6.V7.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckedExistsFile()
+        public void CheckedExistsFile() 
         {
             string path = @"E:\Tyuiu.TsarevMA\repos\Tyuiu.TsarevMA.Sprint5.Task\Tyuiu.TsarevMA.Sprint5.Task6.V7.Test\bin\Debug\InPutDataFileTask6V7.txt";
             FileInfo fileInfo = new FileInfo(path);
