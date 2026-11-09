@@ -7,7 +7,7 @@ namespace Tyuiu.TsarevMA.Sprint5.Task5.V18
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService();
+            DataService ds = new DataService(); 
 
             string path = @"E:\Tyuiu.TsarevMA\repos\Tyuiu.TsarevMA.Sprint5.Task\Tyuiu.TsarevMA.Sprint5.Task5.V18.Test\bin\Debug\InPutDataFileTask5V18.txt";
 
